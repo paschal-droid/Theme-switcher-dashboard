@@ -1,0 +1,163 @@
+            /* INTRODUCTION TEXT */
+
+
+.intro-text{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--number-color);
+}
+
+
+.intro-text-2 {
+    font-size: large;
+    font-weight: 500;
+    color: var(--number-color);
+    padding: 0 0 100px 0;
+}
+
+
+.card-body {
+    margin: 20px 0 40px;
+    text-align: center;
+}
+
+.intro-year {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Inter";
+}
+
+.intro-container, .header-intro {
+    background-color: var(--top-bg-color);
+    padding: 3% 0 10% 10%;
+}  
+
+.first-deck {
+    margin-top: 50px;
+    position: absolute;
+    bottom: 160px;   
+}
+
+body{
+    position: relative;
+}
+
+p {
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 1rem;
+    
+}
+
+.toggle-btn {
+    
+    /* margin-top: 30px; */
+    margin: 3% 0 0 0;
+}
+
+.toggle-btn p {
+    float: right;
+    font-weight: 700;
+    font-family: "Montserrat";
+    font-size: .9em;
+    display: inline;
+    margin: 0 60px 0 0 ;
+}
+
+                /* for toggle button */
+.lbl {
+  position: relative;
+  display: block;
+  height: 25px;
+  width: 47px;
+  background: hsl(230, 22%, 74%);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  float: right;
+  margin-right: 20px;
+  /* margin: 0 0 0 80px; */
+  
+}
+
+.lbl:after {
+  position: absolute;
+  left: -2px;
+  top: -1px;
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 100px;
+  background: #d5d5d5;
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.05);
+  content: '';
+  transition: all 0.3s ease;
+}
+
+.lbl:active:after { transform: scale(1.15, 0.85); }
+
+.cbx:checked~label {
+    background: linear-gradient(hsl(146, 68%, 55%) 10%, hsl(210, 78%, 56%) 90%);
+}
+
+.cbx:checked ~ label:after {
+  left: 20px;
+  background: hsl(228, 28%, 20%);
+}
+
+.cbx:disabled ~ label {
+  background: #d5d5d5;
+  pointer-events: none;
+}
+
+.cbx:disabled ~ label:after { background: #bcbdbc; }
+
+.hidden { display: none; }
+
+
+.intro-year, .intro-no {
+    color: var(--number-color);
+}
+
+
+
+:root {
+    --top-bg-color : hsl(225, 100%, 98%);
+    --text-color: hsl(228, 12%, 44%);
+    --card-bg-color: hsl(227, 47%, 96%);;
+    --body-bg-color: white;
+    --number-color: hsl(230, 17%, 14%);
+   
+    
+}
+
+.dark-theme {
+    --top-bg-color : hsl(232, 19%, 15%);
+    --text-color: hsl(228, 34%, 66%);
+    --card-bg-color: hsl(228, 28%, 20%);
+    --body-bg-color: hsl(230, 17%, 14%);
+    --number-color: white;
+}
+
+
+@media (max-width: 900px) {
+    .g{
+        padding: 20px 10px;
+    }
+
+    .container-head {
+        padding-top: 100px;
+    }
+    .intro-text {
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--number-color);
+        padding-right: 20px;
+    }
+
+
+.toggle-btn{
+    text-align: center;
+}
+}
